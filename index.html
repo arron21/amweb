@@ -5,48 +5,122 @@
 	</link>
 	<link href="css/style.css" type="text/css" rel="stylesheet">
 	</link>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
 	<nav>
-		<div class="logo">
+		<div class="logo nav-link" data-target="home">
 			<svg xmlns="http://www.w3.org/2000/svg" width="155" height="126" viewBox="0 0 155 126" fill="none">
 				<path fill-rule="evenodd" clip-rule="evenodd" d="M85.4258 95.4519V126H100.481V13.6216H136.264L137.967 15.3243L139.67 17.027V126H155V7L147.268 0H139.67H68.1319H63.022L58.9018 3.40541L54.7817 6.81081L0 126H19.1151L32.3626 95.4519H85.4258ZM85.4258 80.3942H39.1758L66.6551 17.027L69.5 15L71.5385 13.6216H85.4258V80.3942Z"
 				 fill="black" />
 			</svg>
 		</div>
 		<ul>
-			<li>about</li>
-			<li>work</li>
-			<li>contact</li>
+			<li class="nav-link" data-target="about">about</li>
+			<li class="nav-link" data-target="work">work</li>
+			<li class="nav-link" data-target="contact">contact</li>
 		</ul>
 
 	</nav>
 	<main>
-		<section class="flex-container flex-center">
+		<section class="flex container mx-auto flex items-center" id="home">
 
-			<h1>Professional Web Development</h1>
+			<div class="flex-1 flex-col flex items-center">
 
+				<h1>Professional Web Development</h1>
+				<h3 class="tagline">extremely high quality code </h3>
+			</div>
+
+			<div class="brackets-container">
+				<img class="brackets" src="images/brackets.svg" />
+			</div>
 		</section>
-		<section class="b">B</section>
-		<section class="b">C</section>
-		<section>
-			<figure class="slow">
-				<img src="https://static.pexels.com/photos/59981/grasshopper-insect-nature-animal-59981.jpeg" />
-			</figure>
+		<div class="art"></div>
+		<section class="flex items-center b bg-cut-backwards" id="about">
+			<div class="container mx-auto  items-center" >
+
+				<h2 class="heading">About</h2>
+				<div class="flex">
+
+					<p class="flex-1 text-3xl font-semibold leading-normal text-gradient">Professional Web Development is my day job, most of my day to day is
+						creating complex custom web applications.<br /> AMWEB is a way to offer professional web development to those interested in a high quality
+						product.</p>
+				</div>
+				<p></p>
+			</div>
 		</section>
-		<section>E</section>
-		<section class="b">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed posuere nulla, ut euismod mi. Orci varius natoque penatibus et magnis dis
-				parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam in
-				magna turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod egestas molestie. Phasellus at lobortis lectus, et
-				dapibus eros. Nulla pharetra dui eu mi molestie imperdiet. Donec lobortis velit posuere velit elementum, nec euismod lorem luctus. Donec eu mi
-				lorem. Sed quis tellus elementum, scelerisque nulla pharetra, ornare turpis. Suspendisse dapibus rhoncus quam, vitae sodales sapien sollicitudin
-				a. Nam facilisis felis id quam condimentum, sit amet venenatis risus vestibulum. Ut id congue orci, sit amet cursus urna. Aliquam risus mauris,
-				placerat eu sem vel, hendrerit elementum tellus. Sed mattis turpis ante, ac semper sapien egestas vestibulum.</p>
-			<figure class="slow">
-				<img src="https://static.pexels.com/photos/59981/grasshopper-insect-nature-animal-59981.jpeg" />
-			</figure>
+		<section class="flex items-center" id="work">
+			<div class="container mx-auto items-center">
+
+				<h2 class="heading">Work</h2>
+				<div class="block md:flex">
+
+					<div class="flex-1">
+						<p class="text-3xl mb-8 font-semibold leading-normal text-gradient">The Products developed at AMWEB are High Quality.</p>
+						<ul class="text-2xl mb-12">
+								<li class="mb-2">Enterprise Level Angular Applications</li>
+								<li class="mb-2">Wicked Fast Static Websites</li>
+								<li class="mb-2">UI/UX Development and Consulting</li>
+							</ul>
+					</div>
+					<div class="flex-1 flex justify-between items-center html-logos">
+						<img class="" src="images/html5.svg" />
+						<img class="" src="images/css.png" />
+						<img class="" src="images/js.png" />
+						
+					</div>
+					<div class="bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden">
+					</div>
+				</div>
+		</section>
+		<section class="b bg-cut-forwards flex items-center" id="cost">
+			<div class="container mx-auto" >
+
+				<h2 class="heading">Cost</h2>
+				<div class="block md:flex">
+					
+				<div class="flex-1">
+					<p class="flex-1 text-3xl font-semibold leading-normal text-gradient">Getting It Done Right</p>
+				</div>
+				<div class="flex-1">
+					<p class="mb-4 text-xl font-semibold leading-normal">The goal is to find the best solution using the most appropriate technologies. That could mean a single page web app (SPA), or a statically
+						generated site (SSG), or even a customized WordPress website.</p>
+
+						<p class="font-semibold text-xl leading-normal">Custom web development is going to vary in cost based on complexity and timeline. Please contact me for a more detailed quote.</p>
+					</div>
+				</div>
+			</div>
+			<div class="art"></div>
+		</section>
+		
+		<section class="flex items-center"  id="contact">
+				<div class="container mx-auto">
+
+						<h2 class="heading mt-32">Contact</h2>
+						<div class="block md:flex">
+					
+								<div class="flex-1">
+									<p class="flex-1 text-3xl font-semibold leading-normal text-gradient">Have Any Questions? <br /> Or Maybe You are Ready to Start a Project!</p>
+								</div>
+								<div class="flex-1">
+									<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+										<input class="hidden" name="bot-field" />
+										<label class="block   uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="name">Name</label>
+										<input class="appearance-none shadow-lg block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" type="text" placeholder="Jane Doe">
+										
+										<label class="block mt-8  uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="email">Email</label>
+										<input class="appearance-none shadow-lg block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" type="text" placeholder="janedoe@gmail.com">
+										<p class="text-grey text-xs italic">Required so I can get in contact with you</p>
+										
+										<label class="block mt-8 uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="message">Message</label>
+										<textarea id="message" class="appearance-none shadow-lg block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+										
+										<button type="submit" class="bg-white mt-8 bg-orange hover:bg-orange-dark text-grey-lightest font-semibold py-2 px-4 border border-grey-light rounded shadow">Send</button>
+									</form>
+								</div>
+							</div>
+						</div>
 		</section>
 	</main>
 
