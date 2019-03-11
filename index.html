@@ -105,12 +105,15 @@
 								</div>
 								<div class="flex-1">
 									<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-										<input class="hidden" name="bot-field" />
-										<label class="block   uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="name">Name</label>
+\										<p class="hidden">
+											<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+										</p>
+
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="name">Name</label>
 										<input class="appearance-none shadow-lg block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" name="name" type="text" placeholder="Jane Doe">
 										
-										<label class="block mt-8  uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="email">Email</label>
-										<input class="appearance-none shadow-lg block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" name="email" type="text" placeholder="janedoe@gmail.com">
+										<label class="block mt-8 uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="email">Email</label>
+										<input class="appearance-none shadow-lg block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" name="email" type="email" placeholder="janedoe@gmail.com">
 										<p class="text-grey text-xs italic">Required so I can get in contact with you</p>
 										
 										<label class="block mt-8 uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="message">Message</label>
