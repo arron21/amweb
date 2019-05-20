@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
+main {
+  scroll-behavior: smooth;
+}
+
 body {
 	background: #fdfaed;
 	font-family: 'Nunito Sans', sans-serif;
@@ -69,7 +73,8 @@ img {
 }
 nav {
 	max-width: 400px;
-	width: 297px;
+	width: 359px;
+	overflow: hidden;
 
 	height: 56px;
 	position: fixed;
@@ -93,7 +98,7 @@ nav {
 		overflow: hidden;
 		&:hover {
 			max-width: 400px;
-			width: 297px;
+			width: 359px;
 
 		}
 	}
@@ -186,6 +191,9 @@ h1 {
 	font-weight: 900;
 
 } 
+.bg-gradient {
+	background: -webkit-linear-gradient(135deg, orange, gold);
+}
 .text-gradient {
 	background: -webkit-linear-gradient(135deg, orange, gold);
 	-webkit-background-clip: text;
@@ -229,6 +237,13 @@ h1 {
 		background: transparent;
 		border: 2px solid orange;
 	}
+
+	
+}
+@media only screen and (max-width: 600px) {
+  .art {
+    display: none;
+  }
 }
 
 .html-logos {

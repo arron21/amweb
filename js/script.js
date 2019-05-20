@@ -14,14 +14,3 @@ container.addEventListener('scroll', (e) => {
     nav.classList.remove('collapsed');
   }
 })
-
-for (let link of navLinks) {
-  console.log(link);
-  console.log(this)
-  const target = link.getAttribute('data-target')
-  link.addEventListener('click', (el) => {
-    console.log(el)
-    const scrollTarget = document.getElementById(target);
-    scrollTarget.scrollIntoView(true);
-  })
-}
